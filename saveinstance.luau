@@ -2714,7 +2714,6 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 						    default_instance
 						    and not Property.Special -- TODO: .Special is checked more than once (because it might be updated during ReadProperty)
 						    and not (PropertyName == "Source" and isLuaSourceContainer(instance))
-						    and not (PropertyName == "CollisionFidelity" and (instance:IsA("MeshPart") or instance:IsA("TriangleMeshPart") or instance:IsA("PartOperation")))
 						then -- ? Could be not just "Source" in the future
 						    if new_def_inst then
 						        default_instance[PropertyName] = index(new_def_inst, PropertyName)
