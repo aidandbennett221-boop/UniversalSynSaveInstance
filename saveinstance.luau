@@ -1272,8 +1272,16 @@ do
 		},
 		TriangleMeshPart = {
 			FluidFidelityInternal = "FluidFidelity",
+			CollisionFidelity = "CollisionFidelity"
 		},
-		MeshPart = { InitialSize = "MeshSize" },
+		MeshPart = { 
+		    InitialSize = "MeshSize",
+		    CollisionFidelity = "CollisionFidelity"
+		},
+		PartOperation = { 
+		    InitialSize = "MeshSize",
+		    CollisionFidelity = "CollisionFidelity"
+		},
 		PartOperation = { InitialSize = "MeshSize" },
 		Part = { shape = "Shape" },
 		TrussPart = { style = "Style" },
